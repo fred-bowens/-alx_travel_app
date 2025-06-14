@@ -1,0 +1,21 @@
+Install drf-yasg for Swagger UI:
+pip install drf-yasg
+
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+    'drf_yasg',
+]
+
+python manage.py runserver
+You I  can now test the endpoints:
+
+GET /api/listings/
+
+POST /api/listings/ (with JSON body)
+
+PUT /api/listings/{id}/
+
+DELETE /api/listings/{id}/
+
+Same for /api/bookings/
